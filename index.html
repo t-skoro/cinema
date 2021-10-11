@@ -12,30 +12,47 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css/normalize.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+		/>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
 		<header class="header">
 			<div class="navbar container">
-				<a href="!#">
+				<a href="#">
 					<img src="img/logo.svg" alt="Logo" />
 				</a>
 				<nav class="nav">
+					<button class="m-menu">
+						<svg
+							width="15"
+							height="9"
+							viewBox="0 0 15 9"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<line y1="0.5" x2="15" y2="0.5" stroke="white" />
+							<line y1="4.5" x2="15" y2="4.5" stroke="white" />
+							<line y1="8.5" x2="15" y2="8.5" stroke="white" />
+						</svg>
+					</button>
 					<ul class="menu">
 						<li class="menu-item">
-							<a href="!#" class="menu-link">Главная</a>
+							<a href="#" class="menu-link">Главная</a>
 						</li>
 						<li class="menu-item">
-							<a href="!#" class="menu-link">Фильмы</a>
+							<a href="#" class="menu-link">Фильмы</a>
 						</li>
 						<li class="menu-item">
-							<a href="!#" class="menu-link">Кинотеатры</a>
+							<a href="#" class="menu-link">Кинотеатры</a>
 						</li>
 						<li class="menu-item">
-							<a href="!#" class="menu-link">События</a>
+							<a href="#" class="menu-link">События</a>
 						</li>
 						<li class="menu-item">
-							<a href="!#" class="menu-link">Поддержка</a>
+							<a href="#" class="menu-link">Поддержка</a>
 						</li>
 					</ul>
 				</nav>
@@ -85,7 +102,12 @@
 					<!-- /.film-details -->
 				</div>
 				<!-- /.film-info -->
-				<a href="!#" class="film-trailer">
+				<a
+					data-fancybox="video-gallery"
+					data-src="https://www.youtube.com/watch?v=z2X2HaTvkl8"
+					href="#"
+					class="film-trailer"
+				>
 					<svg
 						width="100"
 						height="100"
@@ -172,8 +194,6 @@
 		<div class="scheme container">
 			<svg
 				class="scheme-svg"
-				width="1170"
-				height="600"
 				viewBox="0 0 1170 600"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
@@ -760,9 +780,10 @@
 				<span class="ruble">₽</span>
 			</div>
 			<!-- /.price-tag -->
-			<a href="!#" class="button button-pay">Перейти к оплате</a>
+			<a href="#" class="button button-pay">Перейти к оплате</a>
 		</div>
 		<!-- /.price -->
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
 </html>
