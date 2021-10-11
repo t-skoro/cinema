@@ -8,7 +8,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css/normalize.css" />
@@ -115,7 +115,58 @@
 				<!-- /.film-trailer -->
 			</div>
 			<!-- /.film -->
-			<div class="session container"></div>
+			<div class="session container">
+				<div class="session-date">
+					<span class="session-label">Дата</span>
+					<div class="session-date-block">
+						<div class="session-date-item">
+							<span class="session-month">АПР</span>
+							<span class="session-day">27</span>
+							<span class="session-week">пт</span>
+						</div>
+						<div class="session-date-item">
+							<span class="session-month">АПР</span>
+							<span class="session-day">28</span>
+							<span class="session-week">сб</span>
+						</div>
+						<div class="session-date-item">
+							<span class="session-month">АПР</span>
+							<span class="session-day">29</span>
+							<span class="session-week">вс</span>
+						</div>
+						<div class="session-date-item">
+							<span class="session-month">АПР</span>
+							<span class="session-day">30</span>
+							<span class="session-week">пн</span>
+						</div>
+					</div>
+				</div>
+				<!-- /.date -->
+				<div class="session-cinema">
+					<span class="session-label">Кинотеатр</span>
+					<select name="cinema" class="select select-cinema">
+						<option value="Октябрь, ул. Калужская 28">
+							Октябрь, ул. Калужская 28
+						</option>
+						<option value="IMAX, ул. Мира 102">
+							IMAX, ул. Мира 102
+						</option>
+						<option value="CinemaMall, ул. Нефтяников 55">
+							CinemaMall, ул. Нефтяников 55
+						</option>
+					</select>
+				</div>
+				<!-- /.cinema -->
+				<div class="session-time">
+					<span class="session-label">Время</span>
+					<select name="cinema" class="select">
+						<option value="12:00">12:00</option>
+						<option value="16:30">16:30</option>
+						<option value="20:30">20:30</option>
+					</select>
+				</div>
+				<!-- /.session-time -->
+			</div>
 			<!-- /.session -->
 		</header>
 	</body>
